@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Language" content="ko-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="title" content="영화정보">
+    <meta name="keywords" content="영화, 엔터테인먼트, 트렌드">
+    <meta name="description" content="영화정보 사이트">
+    <meta name="theme-color" content="#151c25">
+    <title>최신영화목록 | 무비</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/star.js"></script>
+    <script>
+       $(function() {
+          $('span.stars').stars();
+        }); 
+    </script>
+</head>
+<body>
+  <header id="header">
+      <div class="wrap clearfix">
+         <div class="mobile_top">
+             <button type="button" class="hamber_button"><i class="fa fa-bars fa-2x"></i></button>
+         </div>
+             <a href="#" class="logo">MOVIES</a>
+         <div class="search_bar">
+             <button type="button" class="search_button"><i class="fa fa-search fa-2x"></i></button>
+         </div>
+      </div><!--wrap end-->
+  </header>
+  <main id="main">
+      <div class="wrap">
+          <section class="content_top">
+              <h1>최신 영화목록</h1>
+              <p>상영중인 영화와 개봉 영화를 한눈에 보실수 있습니다.</p>
+          </section>
+          <section id="movie_now_box">
+              <h2>현재상영</h2>
+              <div class="movie_scroll_list">
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_덩케르크.jpg" srcset="images/thumb_덩케르크@2x.jpg 2x, images/thumb_덩케르크@3x.jpg 3x" alt="덩케르크"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3 class="movie_item_title">덩케르크</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="액션">액션</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">4.5</span><span class="score">4.5</span></p>
+                      </div>
+                      <p class="movie_item_date">2017.07.20 개봉</p>
+                  </figcaption>
+                  </figure>
+                  
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_스파이더맨.jpg" srcset="images/thumb_스파이더맨@2x.jpg 2x, images/thumb_스파이더맨@3x.jpg 3x" alt="스파이더맨 : 홈커핑"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3 class="movie_item_title">스파이더맨 : 홈커핑</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="액션">액션</a></li>
+                          <li><a href="" class="tag" title="어드벤처">어드벤처</a></li>
+                          <li><a href="" class="tag" title="판타지">판타지</a></li>
+                          <li><a href="" class="tag" title="SF">SF</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">3.5</span><span class="score">3.5</span></p>
+                      </div>
+                      <p class="movie_item_date">2017.07.05 개봉</p>
+                  </figcaption>
+                  </figure>
+                  
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_47미터.jpg" srcset="images/thumb_47미터@2x.jpg 2x, images/thumb_47미터@3x.jpg 3x" alt="47미터"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3 class="movie_item_title">47미터</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="공포">공포</a></li>
+                          <li><a href="" class="tag" title="스릴러">스릴러</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">3.8</span><span class="score">3.8</span></p>
+                     </div>
+                      <p class="movie_item_date">2017.07.20 개봉</p>
+                  </figcaption>
+                  </figure>
+                  
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_카3.jpg" srcset="images/thumb_카3@2x.jpg 2x, images/thumb_카3@3x.jpg 3x" alt="카3: 새로운 도전"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3 class="movie_item_title">카3: 새로운 도전</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="애니메이션">애니메이션</a></li>
+                          <li><a href="" class="tag" title="어드벤처">어드벤처</a></li>
+                          <li><a href="" class="tag" title="코미디">코미디</a></li>
+                          <li><a href="" class="tag" title="가족">가족</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">3.8</span><span class="score">3.8</span></p>
+                      </div>
+                      <p class="movie_item_date">2017.07.13 개봉</p>
+                  </figcaption>
+                  </figure>
+              </div>
+          </section>
+          <section id="movie_release_box">
+              <h2>개봉예정</h2>
+              <div class="movie_scroll_list">
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_살인자의기억법.jpg" srcset="images/thumb_살인자의기억법@2x.jpg 2x, images/thumb_살인자의기억법@3x.jpg 3x" alt="살인자의기억법"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3>살인자의 기억법</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="범죄">범죄</a></li>
+                          <li><a href="" class="tag" title="스릴러">스릴러</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">3</span><span class="score">3</span></p>
+                       </div>
+                  </figcaption>
+                  </figure>
+                  
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_그것.jpg" srcset="images/thumb_그것@2x.jpg 2x, images/thumb_그것@3x.jpg 3x" alt="그것"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3>그것</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="공포">공포</a></li>
+                          <li><a href="" class="tag" title="드라마">드라마</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">3.8</span><span class="score">3.8</span></p>
+                      </div>
+                  </figcaption>
+                  </figure>
+                  
+                  <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_킬러의보디가드.jpg" srcset="images/thumb_킬러의보디가드@2x.jpg 2x, images/thumb_킬러의보디가드@3x.jpg 3x" alt="킬러의 보디가드"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3>킬러의 보디가드</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="액션">액션</a></li>
+                          <li><a href="" class="tag" title="코미디">코디미</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">4</span><span class="score">4</span></p>
+                      </div>
+                  </figcaption>
+                  </figure>
+                  
+                   <figure class="movie_item"><a href="#" class="movie_item_link"><img src="images/thumb_택시운전사.jpg" srcset="images/thumb_택시운전사@2x.jpg 2x, images/thumb_택시운전사@3x.jpg 3x" alt="택시운전사"></a>
+                  <figcaption class="movie_item_caption">
+                      <h3>택시운전사</h3>
+                      <ul class="movie_item_genre">
+                          <li><a href="" class="tag" title="드라마">드라마</a></li>
+                      </ul>
+                      <div class="movie_rating_box">
+                          <p class="netizen_rating"><span class="stars">4</span><span class="score">4</span></p>
+                      </div>
+                  </figcaption>
+                  </figure>
+              </div>
+          </section>
+      </div>
+  </main>
+  <footer id="footer">
+      <div class="wrap">
+          <div class="copyright">COPYRIGHT © MOVIE INC. ALL RIGHTS RESERVED.</div>
+          <ul class="footer_list">
+              <li><a href="">사이트맵</a></li>
+              <li><a href="">정책</a></li>
+              <li><a href="">저작권</a></li>
+              <li><a href="">이용안내</a></li>
+              <li><a href="">문의하기</a></li>
+           </ul>
+      </div>
+  </footer>
+  <aside id="sidemenu" class="sidemenu">
+   <div class="sidemenu_top">
+         <ul class="menu clearfix">
+             <li><a href="">로그인</a></li>
+             <li><a href="">회원가입</a></li>
+         </ul>
+     </div><!-- sidemenu_top end -->
+     <nav class="navi">
+        <ul class="menu">
+            <li><a href=""><i class="fa fa-video-camera"></i><span>최근 영화목록</span></a></li>
+            <li><a href=""><i class="fa fa-ticket"></i><span>빠른예매</span></a></li>
+            <li><a href=""><i class="fa fa-calendar-check-o"></i><span>개봉 일정안내</span></a></li>
+            <li><a href=""><i class="fa fa-credit-card"></i><span>할인안내</span></a></li>
+            <li><a href=""><i class="fa fa-check-square-o"></i><span>예매내역</span></a></li>
+            <li><a href=""><i class="fa fa-info-circle"></i><span>고객센터</span></a></li>
+        </ul>
+     </nav> 
+</aside> 
+<div class="site-cache" id="site-cache"></div> 
+</body>
+</html>

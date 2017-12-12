@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('base.css');
+
+.wrap {position: relative;max-width: 1140px;padding: 0 20px;margin: 0 auto;box-sizing: border-box}
+.content_box {margin-bottom: 60px}
+/* header 영역 */
+#header {position: fixed;left: 0;top: 0;z-index: 100;width: 100%;height: 60px;background: #151c25}
+.mobile_top {position: absolute;top :0;left: 20px;padding: 18px 0 0;}
+.logo {display: block;width: 100%;padding: 15px 0 0;text-align: center;font-size: 18px;color: #fff}
+.hamber_button {display: block;background: none;border: 0;color: #fff}
+.search_bar {position: absolute;top :0;right: 20px}
+.search_bar .search_button {display: block;height: 60px;border: 0;background: none;color: #fff}
+
+
+/* main 영역 */
+#main {padding: 80px 0 20px}
+.content_top {margin: 0 0 20px}
+.content_top h1 {margin: 0;font-size: 26px}
+.content_top p {margin: 0}
+#movie_now_box {margin-bottom: 60px}
+#movie_now_box h2 {font-size: 22px}
+.movie_scroll_list {overflow-x: auto;white-space: nowrap}
+.movie_item {display: inline-block;width: 140px;margin: 0 10px;vertical-align: top;white-space: normal}
+.movie_item:first-child {margin-left: 0}
+.movie_item_link {display: block}
+.movie_item_link img {width: 100%;height: auto;vertical-align: top}
+.movie_item_caption {margin-top: 10px}
+.movie_item_title {margin: 0 0 0.25em;line-height: 1.4;font-size: 15px;word-break: keep-all}
+.movie_item_genre li {display: inline-block;margin: 0 0 0.286em}
+.movie_item_genre li .tag {background: #252a32;padding: 0.15em 0.357em;display: inline-block;color: #fff}
+.movie_rating_box {}
+.movie_rating_box p {margin: 0}
+.movie_rating_box .stars {vertical-align: middle}
+.netizen_rating .score {margin-left: 5px;vertical-align: middle;color: #f0c91e}
+.critic_rating .score {color: #00af4c}
+.movie_item_date {}
+#movie_release_box {margin-bottom: 60px}
+
+/* footer 영역 */
+#footer .copyright {text-align: center;font-size: 12px}
+#footer .footer_list {text-align: center}
+#footer .footer_list li {display: inline-block;margin-left: 15px}
+#footer .footer_list li:first-child {margin-left: 0}
+
+/* info 영역 */
+.image {width: 100%;height: auto}
+.movie_content {margin-bottom: 60px}
+.movie_info_thumb {position: relative}
+#movie_info_box .play_btn {background: url(../images/play.svg) 0 0 no-repeat;background-size: 128px 128px;border: 0; width: 128px;height: 128px;position: absolute;left: 50%;top: 50%;margin: -64px 0 0 -64px}
+.movie_primary {float: left;margin-bottom: 10px}
+.movie_primary p {margin: 0}
+.movie_genre li {display: inline-block;font-size: 15px}
+.movie_secondary {float: right;text-align: right;margin-bottom: 10px}
+.movie_secondary p {margin: 0}
+.movie_description {clear: both;color: #fff}
+.button_ui {margin: 2em 0;text-align: center}
+.ui_button_wrap {text-align: center}
+.ui_button {background: none;border: 1px solid #f1b716;display: inline-block;padding: 10px 20px 12px;height: 44px;text-align: center;line-height: 18px;font-size: 15px;color: #f1b716;box-sizing: border-box}
+.movie_seat_wrap {margin: 0 0 15px 0;overflow: hidden}
+.movie_seat_wrap .ui_input{width: 100%}
+.ui_input {border: none;background: #2a313f;display: inline-block;height: 36px;padding: 0 10px;text-align: left;color: #fff;white-space: nowrap;box-sizing: border-box}
+.movie_seat_date {float: left;width: 50%;padding: 0 5px 0 5px;margin-bottom: 10px;box-sizing: border-box}
+.movie_seat_time {float: left;width: 50%;padding: 0 5px 0 5px;margin-bottom: 10px;box-sizing: border-box}
+.movie_seat_area {float: left;width: 50%;padding: 0 5px 0 5px;box-sizing: border-box}
+.movie_seat_result {float: left;width: 50%;padding: 0 5px 0 5px;box-sizing: border-box}
+#cast_info_box {}
+#cast_info_box .movie_item {display: inline-block;width: 120px;margin: 0 10px;vertical-align: top;white-space: normal}
+#cast_info_box dl dt {color: #fff}
+#cast_info_box dl dd {color: #6a7277}
+.user_comment_top strong {vertical-align: top}
+.user_comment_text {margin: 0}
+span.stars, span.stars span {display: inline-block;background: url(../images/stars.svg) 0 -17px repeat-x; width: 80px;height: 17px}
+span.stars span {background-position: 0 0}
+.comment_box textarea {background: #2a313f}
+.movie_recommand {width: 100%;box-sizing: border-box}
+.movie_recommand .recommand_list {background: #1e2634;float: left;width: calc(33.333% - 5px);min-height: 187px;padding: 10px;margin: 0 0 0 5px;text-align: center;box-sizing: border-box;color: #fff}
+.movie_recommand .recommand_list:first-child {margin: 0}
+.overlay {background: rgba(0,0,0,.92);display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 999}
+.modal {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden}
+.modal iframe, .modal object, .modal embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%} 
+.modal .modal_close {background: url(../images/close.svg) no-repeat;background-size: 32px 32px;border: 0;width: 32px;height: 32px;position: absolute;right: 24px;top: 24px;text-indent: -999em}
+
+/* order 영역 */
+.order_thumb {float: left;width: 160px}
+.order_thumb a {display: block}
+.order_info {margin-left: 180px}
+.control_ui {display: inline-block;height: 28px;padding: 0 10px;margin: 4px 1px;background: #2a313f;text-align: center;line-height: 28px}
+.order_info_total {display: block;margin: 10px 0;font-size: 20px}
+.warning {color: #f1b716}
+
+.order_wherto > .group {display: table;width: 100%}
+.order_wherto > .group > p {display: table-cell;padding: 0 3px;vertical-align: middle}
+.order_phone1 {width: 25%}
+.order_wherto .ui_input {width: 100%}
+.order_email2 {width: 30%}
+.order_email3 {width: 30%}
+.order_term {margin: 15px 0}
+.order_term ul li {list-style: disc;margin-left: 30px} 
+
+/* mobile navi 영역 */
+.sidemenu {position: fixed;top: 60px;bottom: 0;z-index: 200;overflow-y: auto;padding: 20px;width: 240px;background: #2a313f;box-shadow: 2px 0 5px rgba(0,0,0,.12); -ms-transform: translateX(-250px);-webkit-transform: translateX(-250px);transform: translateX(-250px);box-sizing: border-box}
+.sidemenu_top {border-bottom: 1px solid #384050;padding-bottom: 20px}
+.sidemenu_top .menu {text-align: center}
+.sidemenu_top .menu li {float: left;width: 50%}
+.navi {margin: 30px 0}
+.navi h2 {margin: 0 0 10px;font-size: 15px;font-weight: 400;color: #a9a9a9}
+.navi li {padding-left: 10px}
+.navi li i+span {margin-left: 10px}
+.navi li+li {margin-top: 15px}
+.with-sidebar .sidemenu {-webkit-transition-duration: 0.3s;transition-duration: 0.3s;-ms-transform: translateX(0);-webkit-transform: translateX(0);transform: translateX(0)}
+.with-sidebar .site-cache {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.6)}
+
+

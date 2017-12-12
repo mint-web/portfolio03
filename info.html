@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Language" content="ko-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="title" content="영화정보">
+    <meta name="keywords" content="영화, 엔터테인먼트, 트렌드">
+    <meta name="description" content="영화정보 사이트">
+     <meta name="theme-color" content="#151c25">
+    <title>스파이더맨 : 홈커밍 | 무비</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/dhtmlxcalendar.css" type="text/css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/dhtmlxcalendar.js"></script>
+    <script src="js/star.js"></script>
+    <script>
+        $(function() {
+          $('span.stars').stars();
+        }); 
+        
+         var myCalendar;
+		 function doOnLoad() {
+			myCalendar = new dhtmlXCalendarObject(["cal_1"]);
+		} 
+        
+   </script>
+</head>
+<body onload="doOnLoad();">
+  <header id="header">
+      <div class="wrap clearfix">
+         <div class="mobile_top">
+             <button type="button" class="hamber_button"><i class="fa fa-bars fa-2x"></i></button>
+         </div>
+             <a href="#" class="logo">MOVIES</a>
+         <div class="search_bar">
+             <button type="button" class="search_button"><i class="fa fa-search fa-2x"></i></button>
+         </div>
+      </div><!--wrap end-->
+  </header>
+  <main id="main">
+      <div class="wrap">
+          <section class="content_top">
+              <h1>스파이더맨 : 홈커밍 (2017)</h1>
+              <p>Spider-Man: Homecoming</p>
+          </section>
+          <section id="movie_info_box" class="movie_content">
+              <figure class="movie_info_thumb">
+                 <img class="image" src="images/movie_스파이더맨.jpg" srcset="images/movie_스파이더맨@2x.jpg 2x, images/movie_스파이더맨@3x.jpg 3x" alt="스파이더맨 : 홈커밍">
+                 <button type="button" id="showTrailer" class="play_btn"><span class="hidden">트레일러</span></button> 
+              </figure>
+              <div class="movie_primary">
+                  <ul class="movie_genre">
+                      <li>액션</li>
+                      <li>어드벤처</li>
+                      <li>판타지</li>
+                      <li>SF</li>
+                  </ul>
+                  <p class="time">133분, 2017.07.05 개봉</p>
+              </div><!--movie_primary end-->
+              <div class="movie_secondary">
+                  <p class="movie_score">8.0</p>
+                  <p class="movie_rating">12세이상관람가</p>
+              </div><!--movie_secondary end-->
+              <div class="movie_description">
+                  <p>마블 히어로의 세대교체!</p>
+                  <p>“어벤져스가 되려면 시험 같은 거 봐요?”</p>
+                  <p>‘시빌 워’ 당시 ‘토니 스타크’(로버트 다우니 주니어)에게 발탁되어 대단한 활약을 펼쳤던 스파이더맨 ‘피터 파커’ (톰 홀랜드). 그에게 새로운 수트를 선물한 ‘토니 스타크’는위험한 일은 하지 말라며 조언한다. 하지만 허세와 정의감으로 똘똘 뭉친 ‘피터 파커’는 세상을 위협하는 강력한 적 ‘벌처’(마이클 키튼)에 맞서려 하는데…</p>
+              </div><!--movie_description end-->
+              <div class="button_ui">
+                  <button type="button" class="ui_button">관람영화 등록</button>
+              </div><!-- button_ui end -->
+          </section>
+          <section id="movie_theater_box" class="movie_content">
+              <form action="">
+                  <div class="movie_seat_wrap">
+                      <div class="movie_seat_date"><lable for="cal_1" class="hidden">날짜:</lable><input type="text" id="cal_1" value="2017년 9월 20일 (수)" class="ui_input"></div>
+                      <div class="movie_seat_time">
+                          <lable class="hidden">시간:</lable>
+                          <select name="theaterHour" id="theaterHour" class="ui_input">
+                                <option value="오전 0:30">오전 0:00</option>
+                                <option value="오전 0:30">오전 0:30</option>
+                                <option value="오전 1:00">오전 1:00</option>
+                                <option value="오전 1:30">오전 1:30</option>
+                                <option value="오전 2:00">오전 2:00</option>
+                                <option value="오전 2:30">오전 2:30</option>
+                                <option value="오전 3:00">오전 3:00</option>
+                                <option value="오전 3:30">오전 3:30</option>
+                                <option value="오전 4:00">오전 4:00</option>
+                                <option value="오전 4:30">오전 4:30</option>
+                                <option value="오전 5:00">오전 5:00</option>
+                                <option value="오전 5:30">오전 5:30</option>
+                                <option value="오전 6:00">오전 6:00</option>
+                                <option value="오전 6:30">오전 6:30</option>
+                                <option value="오전 7:00">오전 7:00</option>
+                                <option value="오전 7:30">오전 7:30</option>
+                                <option value="오전 8:00">오전 8:00</option>
+                                <option value="오전 8:30">오전 8:30</option>
+                                <option value="오전 9:00">오전 9:00</option>
+                                <option value="오전 9:30">오전 9:30</option>
+                                <option value="오전 10:00">오전 10:00</option>
+                                <option value="오전 10:30">오전 10:30</option>
+                                <option value="오전 11:00">오전 11:00</option>
+                                <option value="오전 11:30">오전 11:30</option>
+                                <option value="오후 0:00">오후 0:00</option>
+                                <option value="오후 0:30">오후 0:30</option>
+                                <option value="오후 1:00">오후 1:00</option>
+                                <option value="오후 1:30">오후 1:30</option>
+                                <option value="오후 2:00">오후 2:00</option>
+                                <option value="오후 2:30">오후 2:30</option>
+                                <option value="오후 3:00">오후 3:00</option>
+                                <option value="오후 3:30">오후 3:30</option>
+                                <option value="오후 4:00">오후 4:00</option>
+                                <option value="오후 4:30">오후 4:30</option>
+                                <option value="오후 5:00">오후 5:00</option>
+                                <option value="오후 5:30" selected="selected">오후 5:30</option>
+                                <option value="오후 6:00">오후 6:00</option>
+                                <option value="오후 6:30">오후 6:30</option>
+                                <option value="오후 7:00">오후 7:00</option>
+                                <option value="오후 7:30">오후 7:30</option>
+                                <option value="오후 8:00">오후 8:00</option>
+                                <option value="오후 8:30">오후 8:30</option>
+                                <option value="오후 9:00">오후 9:00</option>
+                                <option value="오후 9:30">오후 9:30</option>
+                                <option value="오후 10:00">오후 10:00</option>
+                                <option value="오후 10:30">오후 10:30</option>
+                                <option value="오후 11:00">오후 11:00</option>
+                                <option value="오후 11:30">오후 11:30</option>
+                          </select>
+                      </div>
+                
+                  <div class="movie_seat_area">
+                          <lable class="hidden">지역:</lable>
+                          <select name="theaterArea" id="theaterArea" class="ui_input">
+                                <option value="지역">지역</option>
+                                <option value="서울">서울</option>
+                                <option value="경기도">경기도</option>
+                         </select>        
+                      </div><!--movie_seat_area end -->
+                      <div class="movie_seat_result">
+                          <lable class="hidden">지역:</lable><input type="text" class="ui_input" value="광명/부천">
+                      </div><!--movie_seat_result end -->
+                    </div><!--movie_seat_wrap end -->
+                  <div class="button_ui"><button type="button" class="ui_button">상영정보 검색</button></div><!-- button_ui end -->
+              </form>
+              <form action="">
+                  <p>‘경기도 광명/부천’ 상영정보 검색결과</p>
+                  <div class="radiogroup">
+                      <div class="seat_select"><input type="radio" id="cinema01" name="selectSeat" checked="checked"><label for="cinema01">롯데 시네마 광명(광명사거리)점 (잔여 124석)</label></div>
+                      <div class="seat_select"><input type="radio" id="cinema02" name="selectSeat" ><label for="cinema02">롯데 시네마 광명아울렛점 (잔여 66석)</label></div>
+                      <div class="seat_select"><input type="radio" id="cinema03" name="selectSeat" ><label for="cinema03">롯데 시네마 부천(신중동역)점 (잔여 29석)</label></div>
+                  </div>
+                   <div class="button_ui"><button type="button" class="ui_button">영화 예매하기</button></div><!-- button_ui end -->
+              </form>
+          </section>
+          
+          <section id="cast_info_box" class="movie_content">
+              <h2>스텝/출연진</h2>
+              <div class="movie_scroll_list">
+                  <figure class="movie_item">
+                      <a href="#" title="존 왓츠"><img src="images/cast01.jpg" srcset="images/cast01@2x.jpg 2x, images/cast01@3x.jpg 3x" alt="존왓츠"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>감독</dt>
+                              <dd>존 왓츠</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                   <figure class="movie_item">
+                      <a href="#" title="톰 홀랜드"><img src="images/cast02.jpg" srcset="images/cast02@2x.jpg 2x, images/cast02@3x.jpg 3x" alt="톰 홀랜드"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>주연</dt>
+                              <dd>톰 홀랜드</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                   <figure class="movie_item">
+                      <a href="#" title="마이클 키튼"><img src="images/cast03.jpg" srcset="images/cast03@2x.jpg 2x, images/cast03@3x.jpg 3x" alt="마이클 키튼"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>주연</dt>
+                              <dd>마이클 키튼</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                  <figure class="movie_item">
+                      <a href="#" title="로버트 다우니 주니어"><img src="images/cast04.jpg" srcset="images/cast04@2x.jpg 2x, images/cast04@3x.jpg 3x" alt="로버트 다우니 주니어"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>조연</dt>
+                              <dd>로버트 다우니 주니어</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                  <figure class="movie_item">
+                      <a href="#" title="마리사 토메이"><img src="images/cast05.jpg" srcset="images/cast05@2x.jpg 2x, images/cast05@3x.jpg 3x" alt="마리사 토메이"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>조연</dt>
+                              <dd>마리사 토메이</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                  <figure class="movie_item">
+                      <a href="#" title="제이콥 배덜런"><img src="images/cast06.jpg" srcset="images/cast06@2x.jpg 2x, images/cast06@3x.jpg 3x" alt="제이콥 배덜런 "></a>
+                      <figcaption>
+                          <dl>
+                              <dt>조연</dt>
+                              <dd>제이콥 배덜런</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                  <figure class="movie_item">
+                      <a href="#" title="존 파브로"><img src="images/cast07.jpg" srcset="images/cast07@2x.jpg 2x, images/cast07@3x.jpg 3x" alt="존 파브로"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>조연</dt>
+                              <dd>존 파브로</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+                  <figure class="movie_item">
+                      <a href="#" title="젠다야 콜맨"><img src="images/cast08.jpg" srcset="images/cast08@2x.jpg 2x, images/cast08@3x.jpg 3x" alt="젠다야 콜맨"></a>
+                      <figcaption>
+                          <dl>
+                              <dt>조연</dt>
+                              <dd>젠다야 콜맨</dd>
+                          </dl>
+                      </figcaption>
+                  </figure>
+              </div><!-- movie_scroll_list end -->
+          </section>
+          <section id="user_comment_box" class="movie_content">
+              <h2>관람후기</h2>
+              <div class="user_comment">
+                  <div class="user_comment_top"><strong>tourxx</strong><span class="stars">5</span><span class="rating_number">5</span></div>
+                  <p class="user_comment_text">스파이더맨만 나와도 재밌는데 그 옆을 아이언맨이 받쳐주고 있네?</p>
+              </div><!-- user_comment end -->
+              <div class="user_comment">
+                  <div class="user_comment_top"><strong>rlfalsk</strong><span class="stars">4</span><span class="rating_number">4</span></div>
+                  <p class="user_comment_text">스파이더맨은 빌딩 사이를 거미줄 치며 날아가야 스파이더맨인데..</p>
+              </div><!-- user_comment end -->
+              <div class="user_comment">
+                  <div class="user_comment_top"><strong>giutin03</strong><span class="stars">4</span><span class="rating_number">4</span></div>
+                  <p class="user_comment_text">토비 맥과이어의 스파이더맨을 봤다면 절대 이영화가 재밌다고 못 느낀다</p>
+              </div><!-- user_comment end -->
+              <div class="user_comment">
+                  <div class="user_comment_top"><strong>mising21</strong><span class="stars">2</span><span class="rating_number">2</span></div>
+                  <p class="user_comment_text">초등학생들을 위한 스파이더맨이 되버렸다</p>
+              </div><!-- user_comment end -->
+              <div class="comment_box">
+                  <textarea name="" id="" maxlength="200"></textarea>
+                   <div class="button_ui"><button type="button" class="ui_button">평점 등록하기</button></div><!-- button_ui end -->
+              </div><!-- comment_box end -->
+          </section>
+          <section id="movie_recommand_box">
+              <h2>추천하는 영화</h2>
+              <div class="movie_recommand clearfix">
+                  <figure class="recommand_list">
+                      <a href="#" title="닥터 스트레인지"><img src="images/movie_닥터스트레인지.jpg" class="image" srcset="images/movie_닥터스트레인지@2x.jpg 2x, images/movie_닥터스트레인지@3x.jpg 3x" alt="닥터스트레인지"></a>
+                      <figcaption>닥터 스트레인지</figcaption>
+                  </figure>
+                  <figure class="recommand_list">
+                      <a href="#" title="엑스맨 아포칼립스"><img src="images/movie_엑스맨.jpg" class="image" srcset="images/movie_엑스맨@2x.jpg 2x, images/movie_엑스맨@3x.jpg 3x" alt="엑스맨 아포칼립스"></a>
+                      <figcaption>엑스맨 - 아포칼립스</figcaption>
+                  </figure>
+                  <figure class="recommand_list">
+                      <a href="#" title="원더우먼"><img src="images/movie_원더우먼.jpg" class="image" srcset="images/movie_원더우먼@2x.jpg 2x, images/movie_원더우먼@3x.jpg 3x" alt="원더우먼"></a>
+                      <figcaption>원더우먼</figcaption>
+                  </figure>
+              </div><!-- movie_recommand end -->
+          </section>
+      </div><!-- wrap end -->
+  </main>
+  <footer id="footer">
+      <div class="wrap">
+          <div class="copyright">COPYRIGHT © MOVIE INC. ALL RIGHTS RESERVED.</div>
+          <ul class="footer_list">
+              <li><a href="">사이트맵</a></li>
+              <li><a href="">정책</a></li>
+              <li><a href="">저작권</a></li>
+              <li><a href="">이용안내</a></li>
+              <li><a href="">문의하기</a></li>
+           </ul>
+      </div>
+  </footer>
+<aside id="sidemenu" class="sidemenu">
+   <div class="sidemenu_top">
+         <ul class="menu clearfix">
+             <li><a href="">로그인</a></li>
+             <li><a href="">회원가입</a></li>
+         </ul>
+     </div><!-- sidemenu_top end -->
+     <nav class="navi">
+        <ul class="menu">
+            <li><a href=""><i class="fa fa-video-camera"></i><span>최근 영화목록</span></a></li>
+            <li><a href=""><i class="fa fa-ticket"></i><span>빠른예매</span></a></li>
+            <li><a href=""><i class="fa fa-calendar-check-o"></i><span>개봉 일정안내</span></a></li>
+            <li><a href=""><i class="fa fa-credit-card"></i><span>할인안내</span></a></li>
+            <li><a href=""><i class="fa fa-check-square-o"></i><span>예매내역</span></a></li>
+            <li><a href=""><i class="fa fa-info-circle"></i><span>고객센터</span></a></li>
+        </ul>
+     </nav> 
+</aside> 
+<div class="site-cache" id="site-cache"></div>
+<aside id="blackout" class="overlay">
+  <div class="modal">
+    <div id="trailer"></div> <!-- trailerModal end -->
+    <script>
+      // youtube iframe player api 참조 
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('trailer', {
+          height: '360',
+          width: '640',
+          videoId: 'LjgFtASzrBA',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+     function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }  
+    </script>
+    <button class="modal_close">닫기</button> 
+  </div>
+</aside>
+</body>
+</html>
